@@ -15,8 +15,8 @@ form.addEventListener('submit', async (e) => {
     const data = await res.json();
 
     if (data.success) {
-        messageEl.textContent = "Welcome to ACES";
-        messageEl.className = 'message success';
+      
+        window.location.href = '/dashboard.html';
     } else {
         messageEl.textContent = data.message;
         messageEl.className = 'message error';
