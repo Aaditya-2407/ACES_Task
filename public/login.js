@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
 
     if (data.success) {
       
-        window.location.href = '/dashboard.html';
+        window.location.href = '/Dashboard.html';
     } else {
         messageEl.textContent = data.message;
         messageEl.className = 'message error';
