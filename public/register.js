@@ -17,7 +17,7 @@ form.addEventListener('submit', async (e) => {
     if (data.success) {
         messageEl.textContent = data.message;
         messageEl.className = 'message success';
-        // Redirect to the login page after a short delay
+        // This is the redirect logic
         setTimeout(() => {
             window.location.href = '/';
         }, 2000);
